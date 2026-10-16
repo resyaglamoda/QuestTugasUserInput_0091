@@ -303,6 +303,14 @@ fun FormBiodataScreen() {
                         ),
                         shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
                     ) {
+                        Text(
+                            text = stringResource(id = R.string.btn_proceed),
+                            color = colorResource(id = R.color.white_bg),
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
 
 
 
