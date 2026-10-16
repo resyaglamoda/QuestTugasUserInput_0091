@@ -294,6 +294,17 @@ fun FormBiodataScreen() {
                                 snackbarJob.cancel()
                             }
                         },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(dimensionResource(id = R.dimen.btn_height)),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id = R.color.purple_title), // Warna ungu saat aktif
+                            disabledContainerColor = colorResource(id = R.color.grey_button) // Warna abu-abu saat belum lengkap
+                        ),
+                        shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
+                    ) {
+
+
 
 
 
