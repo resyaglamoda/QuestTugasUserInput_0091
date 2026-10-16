@@ -152,6 +152,29 @@ fun FormBiodataScreen() {
 
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
 
+                    // Row 1: Nama Depan & Nama Belakang (Presisi Seimbang)
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))
+                    ) {
+                        OutlinedTextField(
+                            value = namaDepan,
+                            onValueChange = { namaDepan = it },
+                            label = { Text(stringResource(id = R.string.label_nama_depan)) },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
+                        )
+                        OutlinedTextField(
+                            value = namaBelakang,
+                            onValueChange = { namaBelakang = it },
+                            label = { Text(stringResource(id = R.string.label_nama_belakang)) },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
+                        )
+                    }
+
+
+
 
 
 
