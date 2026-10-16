@@ -228,6 +228,25 @@ fun FormBiodataScreen() {
                                 shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
                             )
 
+                            DropdownMenu(
+                                expanded = expandedExperience,
+                                onDismissRequest = { expandedExperience = false }
+                            ) {
+                                experienceOptions.forEach { option ->
+                                    DropdownMenuItem(
+                                        text = { Text(option) },
+                                        onClick = {
+                                            experience = option
+                                            expandedExperience = false
+                                        }
+                                    )
+                                }
+                            }
+                        }
+                    }
+
+
+
 
 
 
