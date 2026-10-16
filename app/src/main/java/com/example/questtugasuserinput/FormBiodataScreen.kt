@@ -184,6 +184,15 @@ fun FormBiodataScreen() {
                         shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
                     )
 
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+
+                    // Row 2: Tgl Lahir & Experience
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))
+                    ) {
+
+
 
 
 
