@@ -94,6 +94,17 @@ fun FormBiodataScreen() {
             experience.isNotBlank() &&
             (isAndroidChecked || isUiUxChecked || isWebChecked)
 
+    Scaffold(
+        snackbarHost = { SnackbarHost(hostState = snackbarHostState) }
+    ) { innerPadding ->
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+                .background(colorResource(id = R.color.white_bg))
+        ) {
+
+
 
 
 
