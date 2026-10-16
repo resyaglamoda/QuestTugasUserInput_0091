@@ -135,6 +135,14 @@ fun FormBiodataScreen() {
                         .verticalScroll(rememberScrollState()),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
+                    Text(
+                        text = stringResource(id = R.string.title_form),
+                        color = colorResource(id = R.color.purple_title),
+                        fontSize = dimensionResource(id = R.dimen.text_size_title).value.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+
+
 
 
 
