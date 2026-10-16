@@ -270,6 +270,13 @@ fun FormBiodataScreen() {
                             Checkbox(checked = isUiUxChecked, onCheckedChange = { isUiUxChecked = it })
                             Text(text = stringResource(id = R.string.skill_uiux))
                         }
+                        Spacer(modifier = Modifier.width(dimensionResource(id = R.dimen.padding_small)))
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(checked = isWebChecked, onCheckedChange = { isWebChecked = it })
+                            Text(text = stringResource(id = R.string.skill_web))
+                        }
+                    }
+
 
 
 
