@@ -210,6 +210,24 @@ fun FormBiodataScreen() {
                             )
                         }
 
+                        // Experience Dropdown
+                        Box(modifier = Modifier.weight(1f)) {
+                            OutlinedTextField(
+                                value = experience,
+                                onValueChange = { },
+                                readOnly = true,
+                                label = { Text(stringResource(id = R.string.label_experience)) },
+                                trailingIcon = {
+                                    IconButton(onClick = { expandedExperience = true }) {
+                                        Icon(Icons.Default.ArrowDropDown, contentDescription = null)
+                                    }
+                                },
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { expandedExperience = true },
+                                shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
+                            )
+
 
 
 
