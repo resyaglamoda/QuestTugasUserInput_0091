@@ -86,5 +86,14 @@ fun FormBiodataScreen() {
     val snackbarHostState = remember { SnackbarHostState() }
     val coroutineScope = rememberCoroutineScope()
 
+    // Validasi Lengkap: Tombol Proceed aktif & berubah warna HANYA ketika SELURUH data terisi
+    val isFormValid = namaDepan.isNotBlank() &&
+            namaBelakang.isNotBlank() &&
+            email.isNotBlank() &&
+            tglLahir.isNotBlank() &&
+            experience.isNotBlank() &&
+            (isAndroidChecked || isUiUxChecked || isWebChecked)
+
+
 
 
