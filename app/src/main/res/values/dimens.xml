@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="header_height">260dp</dimen>
+    <dimen name="card_top_overlap">180dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="corner_radius_large">28dp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_subtitle">12sp</dimen>
+    <dimen name="text_size_section">14sp</dimen>
+    <dimen name="btn_height">48dp</dimen>
+</resources>
