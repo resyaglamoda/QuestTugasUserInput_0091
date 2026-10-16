@@ -82,4 +82,9 @@ fun FormBiodataScreen() {
     var expandedExperience by remember { mutableStateOf(false) }
     val experienceOptions = listOf("Fresh Graduate", "1-2 Tahun", "3-5 Tahun", "> 5 Tahun")
 
+    // State untuk Snackbar
+    val snackbarHostState = remember { SnackbarHostState() }
+    val coroutineScope = rememberCoroutineScope()
+
+
 
