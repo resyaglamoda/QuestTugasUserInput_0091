@@ -261,6 +261,10 @@ fun FormBiodataScreen() {
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.Start
                     ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(checked = isAndroidChecked, onCheckedChange = { isAndroidChecked = it })
+                            Text(text = stringResource(id = R.string.skill_android))
+                        }
 
 
 
