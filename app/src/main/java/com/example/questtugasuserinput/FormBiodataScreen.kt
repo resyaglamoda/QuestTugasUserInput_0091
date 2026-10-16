@@ -129,6 +129,18 @@ fun FormBiodataScreen() {
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
             ) {
+                Column(
+                    modifier = Modifier
+                        .padding(dimensionResource(id = R.dimen.padding_large))
+                        .verticalScroll(rememberScrollState()),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+
+
+
+
+
+
 
 
 
