@@ -74,3 +74,6 @@ fun FormBiodataScreen() {
     var isUiUxChecked by remember { mutableStateOf(false) }
     var isWebChecked by remember { mutableStateOf(false) }
 
+    // State untuk DatePicker Dialog
+    var showDatePicker by remember { mutableStateOf(false) }
+    val datePickerState = rememberDatePickerState()
