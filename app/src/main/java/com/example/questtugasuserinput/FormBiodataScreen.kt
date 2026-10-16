@@ -245,6 +245,16 @@ fun FormBiodataScreen() {
                         }
                     }
 
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
+
+                    // Label Skill
+                    Text(
+                        text = stringResource(id = R.string.label_pilih_skill),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = dimensionResource(id = R.dimen.text_size_section).value.sp,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
 
 
 
