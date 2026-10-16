@@ -312,6 +312,23 @@ fun FormBiodataScreen() {
                 }
             }
 
+            // Dialog Pop-up DatePicker
+            if (showDatePicker) {
+                DatePickerDialog(
+                    onDismissRequest = { showDatePicker = false },
+                    confirmButton = {
+                        TextButton(onClick = {
+                            val selectedDateMillis = datePickerState.selectedDateMillis
+                            if (selectedDateMillis != null) {
+                                val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                                tglLahir = formatter.format(Date(selectedDateMillis))
+                            }
+                            showDatePicker = false
+                        }) {
+                            Text("OK")
+                        }
+                    },
+
 
 
 
