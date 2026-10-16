@@ -103,6 +103,17 @@ fun FormBiodataScreen() {
                 .padding(innerPadding)
                 .background(colorResource(id = R.color.white_bg))
         ) {
+            // 1. Gambar Header Bagian Atas
+            Image(
+                painter = painterResource(id = R.drawable.taehyung),
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(dimensionResource(id = R.dimen.header_height))
+            )
+
+        }
 
 
 
