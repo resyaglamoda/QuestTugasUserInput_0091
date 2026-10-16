@@ -328,6 +328,18 @@ fun FormBiodataScreen() {
                             Text("OK")
                         }
                     },
+                    dismissButton = {
+                        TextButton(onClick = { showDatePicker = false }) {
+                            Text("Batal")
+                        }
+                    }
+                ) {
+                    DatePicker(state = datePickerState)
+                }
+            }
+        }
+    }
+}
 
 
 
