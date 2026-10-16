@@ -173,6 +173,18 @@ fun FormBiodataScreen() {
                         )
                     }
 
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+
+                    // Input Email (Full Width)
+                    OutlinedTextField(
+                        value = email,
+                        onValueChange = { email = it },
+                        label = { Text(stringResource(id = R.string.label_email)) },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
+                    )
+
+
 
 
 
