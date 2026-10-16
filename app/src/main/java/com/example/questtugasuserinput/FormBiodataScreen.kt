@@ -191,6 +191,24 @@ fun FormBiodataScreen() {
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))
                     ) {
+                        // Tgl Lahir
+                        Box(modifier = Modifier.weight(1f)) {
+                            OutlinedTextField(
+                                value = tglLahir,
+                                onValueChange = { },
+                                readOnly = true,
+                                label = { Text(stringResource(id = R.string.label_tgl_lahir)) },
+                                trailingIcon = {
+                                    IconButton(onClick = { showDatePicker = true }) {
+                                        Icon(Icons.Default.DateRange, contentDescription = null)
+                                    }
+                                },
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { showDatePicker = true },
+                                shape = RoundedCornerShape(dimensionResource(id = R.dimen.padding_medium))
+                            )
+                        }
 
 
 
