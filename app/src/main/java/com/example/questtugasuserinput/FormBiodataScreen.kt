@@ -142,6 +142,18 @@ fun FormBiodataScreen() {
                         fontWeight = FontWeight.Bold
                     )
 
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+
+                    Text(
+                        text = stringResource(id = R.string.subtitle_form),
+                        color = colorResource(id = R.color.grey_subtitle),
+                        fontSize = dimensionResource(id = R.dimen.text_size_subtitle).value.sp
+                    )
+
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
+
+
+
 
 
 
