@@ -277,6 +277,25 @@ fun FormBiodataScreen() {
                         }
                     }
 
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_large)))
+
+                    // Tombol Proceed
+                    Button(
+                        enabled = isFormValid,
+                        onClick = {
+                            coroutineScope.launch {
+                                val snackbarJob = launch {
+                                    snackbarHostState.showSnackbar(
+                                        message = "Data $namaDepan $namaBelakang Berhasil Disimpan!",
+                                        duration = SnackbarDuration.Indefinite
+                                    )
+                                }
+                                delay(5000) // Snackbar pop-up aktif selama 5 detik
+                                snackbarJob.cancel()
+                            }
+                        },
+
+
 
 
 
