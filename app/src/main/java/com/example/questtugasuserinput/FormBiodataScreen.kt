@@ -77,3 +77,9 @@ fun FormBiodataScreen() {
     // State untuk DatePicker Dialog
     var showDatePicker by remember { mutableStateOf(false) }
     val datePickerState = rememberDatePickerState()
+
+    // State untuk Dropdown Experience
+    var expandedExperience by remember { mutableStateOf(false) }
+    val experienceOptions = listOf("Fresh Graduate", "1-2 Tahun", "3-5 Tahun", "> 5 Tahun")
+
+
