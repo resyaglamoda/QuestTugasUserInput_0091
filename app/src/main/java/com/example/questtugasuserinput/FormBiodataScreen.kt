@@ -255,6 +255,14 @@ fun FormBiodataScreen() {
                         modifier = Modifier.fillMaxWidth()
                     )
 
+                    // Checkbox Skill
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Start
+                    ) {
+
+
 
 
 
