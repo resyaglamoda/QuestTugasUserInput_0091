@@ -113,7 +113,25 @@ fun FormBiodataScreen() {
                     .height(dimensionResource(id = R.dimen.header_height))
             )
 
-        }
+            // 2. Card/Box Form Mengapung diatas Image & Menyisakan ~1/4 bagian layar di bawah
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(
+                        top = dimensionResource(id = R.dimen.card_top_overlap),
+                        start = dimensionResource(id = R.dimen.padding_medium),
+                        end = dimensionResource(id = R.dimen.padding_medium),
+                        bottom = 100.dp // Mengambang menyisakan bagian bawah
+                    ),
+                shape = RoundedCornerShape(dimensionResource(id = R.dimen.corner_radius_large)),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(id = R.color.white_bg)
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+            ) {
+
+
+
 
 
 
